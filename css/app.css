@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+html, body {
+  font-family: futura-pt ,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal!important;
+  border: 10px solid #c3af94;
+}
+.extremepadding {padding: 30px 10px;}
+.lib-aws-top{
+  background-color:#000;
+}
+h1, h2, h3, h4 {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.orange {color: #d64b2e;}
+.orangebg {background-color: #d64b2e;}
+.policytop {
+    background-color:#fff;
+    color:#000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 120px 0;
+}
+.contesttop {
+    background-image: url(https://storage.googleapis.com/intersect-bucket/intersect-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 120px 0 0 0;
+}
+.contestbottom {
+    background-image: url(https://storage.googleapis.com/intersect-bucket/intersect-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.elio-icon{
+  width:195px;
+  height:190px;
+  float:right;
+  margin: 140px 0 0 0;
+}
+.elio-intro{
+  text-align: right;
+}
+.elio-intro-txt{
+  float:right;
+  text-align: right;
+  font-size:14px;
+  text-transform: uppercase;
+  font-family: "Open Sans", serif;
+  font-weight: bold;
+  line-height: 24px;
+  color:#62867e;
+}
+.header-pic{
+  width:100%;
+  background-image: url("https://storage.googleapis.com/intersect-bucket/intersect-vip-experience-2020.jpg");
+  min-height: 500px;
+  /* background-size:cover; */
+  background-position: center -500px;
+  background-attachment: fixed;
+}
+.elio-form{
+  background-color:#fff;
+  padding:50px;
+  margin: 20px 40px;
+}
+.nes-form-block {width: 100%; font-size: 1rem}
+.nes-form-block form {padding: 0}
+.nes-form-block .form-item {margin-bottom: 1rem}
+.nes-form-block .form-item .field-title {
+  font-size: 18px;
+  font-weight: 400;
+  display: block;
+  letter-spacing: 0.05rem;
+  font-family: 'goudy-old-style', serif;
+}
+.nes-form-block .form-item .field-element {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 2px rgba(10,10,10,.1);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0px;
+}
+.nes-form-block .form-item.optional-item label {font-size: 18px; font-weight: 400;}
+.nes-form-block .form-item .field-element.submit-button {
+  font-family: 'futura-pt', sans-serif;
+  margin-top: 15px;
+  width: 100%;
+  padding: 25px;
+  background-color: #aec6b8;
+  color: #fff;
+  border-radius: 0;
+  border: 2px solid #aec6b8;
+  cursor: pointer;
+  font-family: futura-pt;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+.nes-form-block .form-item.disclaimer-item, .nes-form-block .form-item.disclaimer-item a {
+  font-size: 12px;
+  color: #555;
+}
+.header-pic img{
+  width:100%;
+}
+.date-text {
+  font-size: 24px;
+  line-height: 24px;
+  color: #000;
+  float: left;
+  font-family: 'goudy-old-style', serif;
+  padding: 15px;
+}
+.vip-experience-txt{
+  width: 100%;
+  font-size: 36px;
+  line-height: 36px;
+  color: #fff;
+  text-align: center;
+  font-family: 'goudy-old-style', serif;
+  padding: 280px 0 0 0;
+  text-shadow: 2px 2px 8px #000000;
+}
+.header {
+  min-height: 970px;
+  align-content: center;
+  width:100%;
+  background-image: url("https://storage.googleapis.com/wynn-bucket/header.jpg");
+  background-size: cover;
+}
+.elio-form-title{
+  font-size: 24px;
+  color:#c3af94;
+  text-align: center;
+}
+.elio-form-subtitle{
+  font-size: 18px;
+  color:#999;
+  text-align: center;
+  padding: 10px 0 30px;
+}
+.elio-logo {
+  width: 168px;
+  height: 62px;
+  color: rgba(0,0,0,0);
+  padding: 20px;
+  display: block;
+}
+.elio-logo img{
+  width:100%;
+}
+.about-txt{
+  color:#fff;
+  text-align: justify;
+  font-size: 18px;
+  font-family: 'goudy-old-style', serif;
+}
+.header-sect{
+  width:100%;
+  display: block;
+}
+.lib-txt{
+  font-family: montserrat,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.policy-indent {
+  text-indent: 50px;
+}
+.gallery-sect{
+  width:100%;
+  background-color:#1e1e1e;
+  padding:20px;
+}
+.meet-the-founders-txt{
+  padding:40px 0;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'goudy-old-style', serif;
+  font-style: italic;
+  color:#666666;
+  text-transform: uppercase;
+}
+.food-pics{
+  width:100%;
+}
+.food-pics img{
+  width:100%;
+}
+.founder-pic{
+  margin: 0 0 20px 0;
+}
+.founder-pic img{
+  width:100%;
+}
+.founder-txt{
+  font-size: 18px;
+  font-family: 'goudy-old-style', serif;
+  color:#666666;
+  margin: 0 0 20px 0;
+}
+.founder-name{
+  font-family: 'goudy-old-style', serif;
+  font-size:36px;
+  font-weight: bold;
+}
+.chef-sect{
+  background-image: url('https://storage.googleapis.com/wynn-bucket/chef-background.jpg');
+  background-color:#e6dfde;
+  background-position: center;
+  padding:20px;
+  background-size:cover;
+}
+.meet-the-chef{
+  background-color: #a4bbad;
+  padding: 30px 0 60px;
+}
+b, strong {
+    font-weight: 700!important;
+    line-height: inherit;
+}
+h1.header1 {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 29px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 400;
+  font-family: 'goudy-old-style', serif;
+}
+.chefs-icon{
+  text-align: center;
+  padding:20px 0 0;
+}
+.content1 p {
+  margin-bottom: 2rem;
+  font-size: 1.15rem;
+}
+.content1_tablet{
+  width:770px;
+  margin: 0 auto 40px;
+}
+.lander-submit{
+  margin-top: 2rem;
+}
+/** Form Sidebar and Block Styles */
+.formcontent {
+  text-align: center;
+}
+
+h3.header2 {
+  padding: 70px 0 0 0!important;
+  font-family: 'goudy-old-style', serif;
+  text-align: center;
+}
+h3.header3 {
+  padding: 0!important;
+  font-family: 'goudy-old-style', serif;
+  text-align: center;
+}
+p.details {
+  font-size: 16px;
+  letter-spacing: .06em;
+  margin: 0 0 60px!important;
+  text-align: center;
+}
+.tickets-on-sale-txt{
+  font-size: 22px;
+  /* margin: 0 0 48px 0; */
+  font-family: 'goudy-old-style', serif;
+  color:#fff;
+  text-align: center;
+}
+.formblock {
+  text-align: left;
+  font-family: 'goudy-old-style', serif;
+}
+#error_box { z-index: 1001; position: absolute; display: none; top: 50px; left: 10px; background-color: #F2F1F0; border: 1px solid #979797; border: 1px solid #a8a8a8; padding: 15px; color: #333; font-size: 14px; cursor: default; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+#error_box:after { content: " "; width: 25px; height: 25px; background-image: url("../img/balloon-top.png"); background-repeat: no-repeat; position: absolute; top: -25px; left: 15px; }
+
+/** Footer Styles */
+.footer {
+  background-color: #d76ba8;
+  text-align: center;
+  padding:20px 0;
+  font-family: goudy-old-style, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.footer-logo{
+  width:180px;
+  margin: 20px auto;
+}
+.footer-logo img{
+  width:100%;
+}
+.lib-icon{
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  margin: -160px 0 0 0;
+}
+.lib-icon img{
+  width:100%;
+}
+.footer-content {padding: 100px 66px;}
+.footer-content a {
+  color:#000;
+  text-transform: uppercase;
+  font-family: 'goudy-old-style', serif;
+}
+.tweet-button {
+  background-color:#ec1d47;
+  color:#fff;
+  width:100%;
+  padding:20px;
+  display: block;
+  margin: 10px 0 0 0;
+  text-transform: uppercase;
+}
+.tweet-button a {
+  color:#fff!important;
+}
+.maincontent{
+  padding:5px;
+  color:#fff;
+}
+.video-placeholder {
+  position: relative;
+  margin: auto;
+  max-width: 100%;
+  border: 5px solid #FFF;
+  background:#000;
+  width: 600px;
+}
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 100%;
+}
+.homepage .block1-wrapper .block1 .content svg {
+  height: 6 .375rem;
+  width: 100%;
+  cursor: pointer;
+}
+.ticket-box {
+  float: left;
+  width: 100%;
+}
+.mayors-fund-beautiful-code{
+  font-size: 24px;
+  font-family: 'goudy-old-style', serif;
+  display: block;
+}
+.ticket-box-ga-mayor {
+  text-align: center;
+  background-color: #5fe138;
+  color: #5fe138;
+  -webkit-text-fill-color: #5fe138;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #fff;
+  font-family: "Monument-Extended-Bold", serif;
+  padding: 50px 0;
+  font-size: 98px;
+  letter-spacing: 3px;
+  display: block;
+}
+.mayors-fund{
+  font-size:12px;
+  display: block;
+  margin: -14px 0;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: #fff;
+  letter-spacing: 1px;
+}
+.mayors-fund-discount{
+  font-size:12px;
+  display: block;
+  margin: -14px 0;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "montserrat", serif;
+}
+.ticket-box-ga {
+  text-align: center;
+  background-color: #636aff;
+  color: #636aff;
+  -webkit-text-fill-color: #636aff;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #fff;
+  font-family: "Monument-Extended-Bold", serif;
+  padding: 50px 0;
+  font-size: 98px;
+  letter-spacing: 3px;
+  display: block;
+}
+.buy-tickets-title{
+  text-align: center;
+  background-color: #000;
+  color: #000;
+  -webkit-text-fill-color: #000;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #fff;
+  font-family: "Monument-Extended-Bold", serif;
+  padding: 50px 0 0;
+  font-size: 76px;
+  letter-spacing: 3px;
+  display: block;
+}
+.get-tickets-btn{
+  float:right;
+}
+.button-padding{
+  padding:80px 0 10px;
+  text-align: center;
+}
+.boxes{
+  margin: 0 0 30px 0;
+  overflow: auto;
+}
+.collab-buy-tickets{
+  background-color: #5fe138;
+  color: #fff;
+  padding: 1.2rem 2.9rem .95rem;
+  font-family: 'goudy-old-style', serif;
+  text-transform: uppercase;
+  margin: 30px auto 0;
+  text-align: center;
+}
+.beautiful-green{
+  color:#5fe138;
+  font-weight: bold;
+}
+.beautiful-pulse{
+  color:#fff;
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    color:#fff;
+  }
+  50% {
+    color:#5fe138;
+  }
+  100% {
+    color:#fff;
+  }
+}
+.collab-buy-tickets:hover{
+  background-color: #3c9d1f;
+  color:#fff;
+  -webkit-animation: none;
+}
+.collab-bg{
+  background-color: #5fe138;
+  animation: pulse 1.2s ease infinite;
+  padding: 20px;
+  width: 100%;
+}
+.navi-buy-tickets{
+  color:#fff;
+  background-color: #5fe138;
+  padding: 1.2rem 2.9rem .95rem;
+  display: inline-block;
+  font-family: 'goudy-old-style', serif;
+  text-transform: uppercase;
+  margin: 15px 0 0 0;
+  display: block;
+}
+.navi-buy-tickets:hover{
+  background-color: #3c9d1f;
+  color:#fff;
+}
+.with-code-cta{
+  padding: 20px 0;
+  font-size:30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.ticket-title-boxes {
+    width: 50%;
+    margin: 0 2% 0 6%;
+    overflow: hidden;
+    float: left;
+    display: block;
+}
+.ga-ticket-box-1, .ga-ticket-box-2, .vip-ticket-box, .vipplus-ticket-box {
+    width: 36%;
+    margin: 0 2% 0 0;
+    float: left;
+}
+.ticket-box{
+    overflow: auto;
+    margin: 30px 0 0 0;
+}
+.ticket-box-vip {
+    text-align: center;
+    background-color: #ff873e;
+    color: #ff873e;
+    -webkit-text-fill-color: #ff873e;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    font-family: "Monument-Extended-Bold", serif;
+    padding: 50px 0;
+    font-size: 98px;
+    letter-spacing: 3px;
+    display: block;
+}
+.redirect-tm-buy-now-vip{
+  background-color: #fff;
+  text-align: center;
+  padding:86px 0;
+  display: block;
+  color:#ff873e;
+}
+.ticket-box-vip-plus {
+  text-align: center;
+  background-color: #ff5548;
+  color: #ff5548;
+  -webkit-text-fill-color: #ff5548;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  font-family: "Monument-Extended-Bold", serif;
+  padding: 50px 0;
+  font-size: 98px;
+  letter-spacing: 3px;
+  display: block;
+}
+.redirect-tm-buy-now-vipplus{
+  background-color: #fff;
+  text-align: center;
+  padding:86px 0;
+  display: block;
+  color:#ff5548;
+}
+.redirect-tm-buy-now-ga-1{
+  background-color: #fff;
+  text-align: center;
+  padding:41px 0;
+  display: block;
+  color:#636aff;
+  border-top: 0px solid #fff;
+}
+.redirect-tm-buy-now-ga-2{
+  background-color: #fff;
+  text-align: center;
+  padding:40px 0;
+  display: block;
+  color:#636aff;
+  border-top: 0px solid #fff;
+}
+.tickets-sect{
+  background-color: #000;
+  padding: 20px 0;
+  overflow: auto;
+}
+.redirect-tm-buy-now-vipplus:hover{
+  color:#ff5548!important;
+}
+.redirect-tm-buy-now-vip:hover{
+  color:#ff873e!important;
+}
+.redirect-tm-buy-now-ga-1:hover{
+  color:#636aff!important;
+}
+.redirect-tm-buy-now-ga-2:hover{
+  color:#636aff!important;
+}
+.redirect-vipplus-rollover, .redirect-vip-rollover, .redirect-ga-rollover-1, .redirect-ga-rollover-2{
+  display: none;
+}
+.redirect-tm-red-orange {
+  background-color: #000;
+  text-align: center;
+  border: 3px solid #ff5548;
+  padding: 25px 0;
+  display: block;
+  color: #ff5548;
+  padding: 65px 0;
+}
+.redirect-tm-orange {
+  background-color: #000;
+  text-align: center;
+  border: 3px solid #ff873e;
+  padding: 25px 0;
+  display: block;
+  color: #ff873e;
+  padding: 65px 0;
+}
+.redirect-tm-sm {
+  background-color: #000;
+  text-align: center;
+  border: 3px solid #636aff;
+  padding: 25px 0;
+  display: block;
+  color: #636aff;
+  padding: 30px 0;
+}
+.redirect-tm-sm-2 {
+  background-color: #000;
+  text-align: center;
+  border-right: 3px solid #636aff;
+  border-left: 3px solid #636aff;
+  border-bottom: 3px solid #636aff;
+  padding: 25px 0;
+  display: block;
+  color: #636aff;
+  padding: 30px 0;
+}
+.redirect-tm-mayor {
+  background-color: #000;
+  text-align: center;
+  border: 3px solid #5fe138;
+  padding: 25px 0;
+  display: block;
+  color: #5fe138;
+  padding: 36px 0;
+}
+.trailer-poster{
+  margin: 50px auto 0;
+}
+.policy-links{
+  text-align: center;
+  background:#000;
+  color:#fff;
+  font-family: 'goudy-old-style', serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 40px 0;
+}
+.policy-links a{
+  color:#fff;
+}
+.day{
+  font-size:36px;
+  font-family: 'goudy-old-style', serif;
+}
+.day-sm{
+  font-size:22px;
+  font-family: 'goudy-old-style', serif;
+}
+.plus-sign{
+  font-size:48px;
+}
+.ticket-title{
+  color:#fff;
+}
+.day-price{
+  font-size: 30px;
+}
+.lib-txt {
+  font-family: montserrat,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  width:84%;
+  margin: 0 8%;
+}
+.cookie-notitce{
+  text-decoration: underline;
+  color:#333;
+}
+.accept-cookies-btn{
+  text-decoration: none;
+  color:#fff;
+}
+/** Mobile Styles */
+@media screen and (max-width: 990px) {
+  .elio-form {
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 0 20px 0;
+  }
+  .elio-logo {
+    width: 168px;
+    height: 62px;
+    color: rgba(0,0,0,0);
+    padding: 20px;
+    display: block;
+    margin: auto;
+  }
+  .elio-icon {
+    width: 120px;
+    height: 120px;
+    float: none;
+    margin: 20px auto 0;
+  }
+  .elio-icon img{
+    width:100%;
+  }
+  .elio-intro-txt {
+    float: none;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "Open Sans", serif;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 20px 0;
+    color: #62867e;
+  }
+  .food-pics{
+    margin: 0 0 20px 0;
+  }
+}
+@media screen and (max-width: 769px) {
+  .accept-cookies-btn{
+    text-decoration: none;
+    color:#fff;
+    margin: 20px 0 0 0;
+  }
+}
