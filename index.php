@@ -1,3 +1,15 @@
+<?php
+require_once dirname(__FILE__).'/nes/Dynamix/API.php';
+if(isset($_GET['debug'])){
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+}
+
+$template_name = 'index';
+require dirname(__FILE__).'/_creds.php';
+// require dirname(__FILE__).'/_dynamix.php';
+?>
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
@@ -18,6 +30,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/epl0coh.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
 
   <body>
@@ -64,6 +77,7 @@
                 <div class="elio-form-subtitle"></div>
 
                 <form autocomplete="on" id="contest_form" action="_submit.php" method="POST">
+                  <input type="hidden" name="profile" value="default" />
                   <div class="field-list clear">
 
                     <div class="form-item required-item">
@@ -161,10 +175,10 @@
               <br/><br/>
               Olvera is the internationally acclaimed chef and restauranteur behind ATM Group (Cosme, ATLA) in the United States and Grupo Olvera in Mexico, which includes Pujol (#1 restaurant in North America on the 2019 World’s 50 Best list). His cooking is rooted in the techniques and ingredients of Mexico and constantly transforms to advance the way people consider andconsume Mexican food.
               <br/><br/>
-              In 2020, Olvera and ATM Group team look westward with the upcoming Damian restaurant and Ditroit taqueria openings in downtown Los Angeles as well as the group's forthcoming contemporary Mexican restaurant at the Wynn Las Vegas. Olvera recently authored Tu Casa Mi Casa: Mexican Recipes for the Home Cook (Phaidon, 2019).
+              In 2020, Olvera and ATM Group team look westward with the upcoming Damian restaurant and Ditroit taqueria openings in downtown Los Angeles as well as the group's forthcoming contemporary Mexican restaurant at Wynn Las Vegas. Olvera recently authored Tu Casa Mi Casa: Mexican Recipes for the Home Cook (Phaidon, 2019).
             </div>
           </div>
-          
+
           <div class="col-md-4">
             <div class="founder-pic">
               <img src="https://storage.googleapis.com/wynn-bucket/daniela.jpg" alt="Daniela Soto-Innes">
@@ -178,7 +192,7 @@
               <br/><br/>
               After moving back to Mexico City for a transformative stage at Enrique Olvera’s Pujol, Soto-Innes began working closely with the restaurateur/chef and the two, along with their ATM Group partner Santiago Perez, opened Cosme in 2014. Following the critical success of Cosme, Soto-Innes opened ATLA in 2017 as the chef/partner, introducing the all-day café offering modern Mexican fare. Soto-Innes has received multiple accolades for her work, including being named as 2016 James Beard Rising Star Chef of the Year, recognized on Forbes Magazine’s 2017 30 under 30: Food & Drink list and as the 2019 World’s Best Female Chef.
               <br/><br/>
-              She continues to find joy in elevating simple ingredients while working actively to empower her staff and create an inspiring and supportive kitchen culture. In 2020, Soto-Innes and team look westward with the upcoming Damian restaurant and Ditroit taqueria openings in downtown Los Angeles as well as their forthcoming contemporary Mexican restaurant at the Wynn Las Vegas.
+              She continues to find joy in elevating simple ingredients while working actively to empower her staff and create an inspiring and supportive kitchen culture. In 2020, Soto-Innes and team look westward with the upcoming Damian restaurant and Ditroit taqueria openings in downtown Los Angeles as well as their forthcoming contemporary Mexican restaurant at Wynn Las Vegas.
             </div>
           </div>
 
@@ -191,7 +205,7 @@
               @santiago.perez<br/>
               Managing Partner, Cosme, ATLA and Pujol<br/>
               <br/><br/>
-              Santiago Perez was born in Mexico City. He received a chemical engineering degree and then somewhere along the way decided investment banking was the right fit. At the age of 29 he was working at UBS in NYC and decided he wanted to open up a restaurant. Cosme, now open for 5 years has only increased in popularity as time goes on, increasing the fame and influence of chef Enrique Olvera and catapulting chef Daniela Soto-Innes to chef stardom. In 2017 they opened Atla, both chefs now partners.
+              Santiago Perez always felt at home in the hospitality industry and has always had a clear vision of the key principles of excellence in service. After years of working as an investment banker in London and New York, he chose to incorporate his love of hospitality into his career. Over several meetings and a few rounds of mezcal, Perez partnered with acclaimed chef and restaurateur, Enrique Olvera to launch contemporary Mexican restaurant, Cosme to great acclaim. The team then launched ATLA, a more casual interpretation of Modern Mexican cuisine in NoHo in New York City. As Managing Partner of ATM Group, he is currently leading the expansion into the West Coast and strives to provide a fresh interpretation of authentic Mexican culture and cuisine into the USA.
             </div>
           </div>
         </div>
@@ -247,15 +261,22 @@
 
     <section class="footer" id="footer">
       <div class="footer-content" data-xid="footer-content">
+        <div class="social-icons">
+          <li><a href="https://www.facebook.com/elio.lasvegas/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="https://instagram.com/elio_lv" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/elio_lv" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        </div>
         <div class="footer-logo"><img src="https://storage.googleapis.com/wynn-bucket/footer-logo.jpg" alt="Elio"></div>
-        <a href="https://www.wynnlasvegas.com" target="_blank" class="Footer-nav-item">www.wynnlasvegas.com</a>
+        <a href="https://www.wynnlasvegas.com" target="_blank" class="Footer-nav-item">© 2020 Wynn Resorts Holdings, LLC. All rights reserved.</a><br/><br/>
+        <a href="https://www.wynnlasvegas.com/" target="_blank">Wynn Las Vegas</a> | <a href="https://www.wynnlasvegas.com/privacy-policy" target="_blank">Privacy</a>
       </div>
     </section>
-
+    <?php echo "<script>var profileURL = '".$profileName."';</script>"; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <!-- Latest compiled and minified JavaScript -->
+    <script src="https://kit.fontawesome.com/46ce86028b.js" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    <link rel="stylesheet" href="css/app.css">
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/additional-methods.js"></script>

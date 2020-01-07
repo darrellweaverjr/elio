@@ -4,9 +4,9 @@
  * Credentials for the Dynamix User
  */
 
-$api_email    = "michael@newepochsoftware.com";
-$dynamixkey   = "ygAx1_95a8a3d556201f888d34d27f11dfc8235ec24fb1";
-$glowfishkey  = "k2jKv_1022838621137371982c5dbb17255febdaa3e1cc";
+$api_email    = "keith.white@wynnlasvegas.com";
+$dynamixkey   = "FS13k_a2d0f0fe5254b0a83b5863b565da59bee3a88c31";
+$glowfishkey  = "0oZRe_16e9f36e606d8a99de9321839d8e2a9de1056b74";
 $templates = array(
   "index"     =>  "lander",
   "policy"    =>  "policy",
