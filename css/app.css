@@ -86,6 +86,17 @@ h1, h2, h3, h4 {
   padding:50px;
   margin: 20px 40px;
 }
+.elio-thank-you{
+  background-color:#fff;
+  padding:50px;
+  margin: 260px 40px 20px;
+}
+.elio-form-thank-you-subtitle {
+  font-size: 18px;
+  color: #999;
+  text-align: center;
+  padding: 10px 0 0;
+}
 .nes-form-block {width: 100%; font-size: 1rem}
 .nes-form-block form {padding: 0}
 .nes-form-block .form-item {margin-bottom: 1rem}
@@ -704,6 +715,11 @@ audio, canvas, video {
     padding: 30px;
     margin: 0 0 20px 0;
   }
+  .elio-thank-you {
+    background-color: #fff;
+    padding: 50px;
+    margin: 140px 0px 0px;
+  }
   .elio-logo {
     width: 168px;
     height: 62px;
@@ -737,6 +753,11 @@ audio, canvas, video {
   }
 }
 @media screen and (max-width: 769px) {
+  .elio-thank-you {
+    background-color: #fff;
+    padding: 50px;
+    margin: 20px 0px;
+  }
   .accept-cookies-btn{
     text-decoration: none;
     color:#fff;
