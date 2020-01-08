@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($firstName && $lastName && $email_addr) {
         // must include first, last and email
         $lead = new \Colugo\API\Lead();
-        $lead->setLeadSource("Fire Gorilla lander");
+        $lead->setLeadSource("ELIOLANDER");
         $lead->setLeadIpAddress($ip);
         $fields = [
             "Profile"       => $profileName,
