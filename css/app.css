@@ -752,6 +752,12 @@ audio, canvas, video {
   }
 }
 @media screen and (max-width: 769px) {
+  .founder-txt {
+    font-size: 18px;
+    font-family: 'goudy-old-style', serif;
+    color: #666666;
+    margin: 0 0 120px 0;
+  }
   .elio-thank-you {
     background-color: #fff;
     padding: 50px;

@@ -112,7 +112,7 @@ require dirname(__FILE__).'/_dynamix.php';
 
     </div>
 
-    <div class="meet-the-chef">
+    <!-- <div class="meet-the-chef">
       <div class="container">
 
         <div class="chefs-icon">
@@ -122,11 +122,10 @@ require dirname(__FILE__).'/_dynamix.php';
         <div class="meet-the-founders-txt">meet the chef</div>
 
         <div class="row" data-xid="Sarah-Thompson">
-          <?= $profile->xid("Sarah-Thompson") ?>
         </div>
 
       </div>
-    </div>
+    </div> -->
 
     <div class="gallery-sect" data-xid="drinks">
       <div class="row">
