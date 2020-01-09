@@ -4,7 +4,27 @@ html, body {
   font-weight: 400;
   font-style: normal;
   line-height: normal!important;
-  border: 10px solid #c3af94;
+  border-left: 10px solid #c3af94;
+  border-right: 10px solid #c3af94;
+  border-bottom: 10px solid #c3af94;
+  margin: 45px 0 0 0!important;
+}
+.wynn-header {
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+  border-bottom: 20px solid #c3af94;
+}
+.wynn-logo{
+  margin:auto;
+  width:100px;
+}
+.wynn-logo img{
+  width:100%;
 }
 .extremepadding {padding: 30px 10px;}
 .lib-aws-top{
@@ -26,17 +46,7 @@ h1, h2, h3, h4 {
     padding: 120px 0;
 }
 .contesttop {
-    background-image: url(https://storage.googleapis.com/intersect-bucket/intersect-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
     padding: 120px 0 0 0;
-}
-.contestbottom {
-    background-image: url(https://storage.googleapis.com/intersect-bucket/intersect-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
 }
 .elio-icon{
   width:195px;
@@ -170,7 +180,7 @@ h1, h2, h3, h4 {
   min-height: 970px;
   align-content: center;
   width:100%;
-  background-image: url("https://storage.googleapis.com/wynn-bucket/elio-header.jpg");
+  background-image: url("https://storage.googleapis.com/wynn-bucket/elio-food-header.jpg");
   background-size: cover;
 }
 .elio-form-title{
@@ -714,17 +724,7 @@ audio, canvas, video {
   text-decoration: none;
   color:#fff;
 }
-.wynn-header{
-  text-align: center;
-  padding: 10px 0;
-}
-.wynn-logo{
-  margin:auto;
-  width:100px;
-}
-.wynn-logo img{
-  width:100%;
-}
+
 /** Mobile Styles */
 @media screen and (max-width: 990px) {
   .elio-form {
