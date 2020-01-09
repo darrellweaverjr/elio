@@ -47,7 +47,11 @@ require dirname(__FILE__).'/_dynamix.php';
     </div>
 
     <div class="wynn-header">
-      <div class="wynn-logo"><img src="https://cdn.wynnlasvegas.com/-/media/images/wynn-resorts-global/logo/wynn-animated-logo.ashx" alt="Wynn Las Vegas"></div>
+      <div class="wynn-logo">
+        <a href="https://www.wynnlasvegas.com/" target="_blank">
+          <img src="https://cdn.wynnlasvegas.com/-/media/images/wynn-resorts-global/logo/wynn-animated-logo.ashx" alt="Wynn Las Vegas">
+        </a>
+      </div>
     </div>
 
     <div class="header">
