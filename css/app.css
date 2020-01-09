@@ -714,6 +714,17 @@ audio, canvas, video {
   text-decoration: none;
   color:#fff;
 }
+.wynn-header{
+  text-align: center;
+  padding: 10px 0;
+}
+.wynn-logo{
+  margin:auto;
+  width:100px;
+}
+.wynn-logo img{
+  width:100%;
+}
 /** Mobile Styles */
 @media screen and (max-width: 990px) {
   .elio-form {

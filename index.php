@@ -46,6 +46,9 @@ require dirname(__FILE__).'/_dynamix.php';
       <?= $profile->xid("cookies") ?>
     </div>
 
+    <div class="wynn-header">
+      <div class="wynn-logo"><img src="https://cdn.wynnlasvegas.com/-/media/images/wynn-resorts-global/logo/wynn-animated-logo.ashx" alt="Wynn Las Vegas"></div>
+    </div>
     <div class="header">
       <div class="container-fluid">
         <div class="row">
@@ -174,7 +177,7 @@ require dirname(__FILE__).'/_dynamix.php';
         <div class="meet-the-founders-txt">meet the chef</div>
 
         <div class="row" data-xid="Sarah-Thompson">
-          
+
         </div>
 
       </div>
