@@ -106,12 +106,12 @@ require dirname(__FILE__).'/_dynamix.php';
                       <input class="form-control" id="email" name="email" type="email" spellcheck="false" required="required">
                     </div>
 
-                    <div class="form-item required-item">
+                    <!-- <div class="form-item required-item">
                       <label class="field-title">
                         Phone<span>*</span>
                       </label>
                       <input class="form-control" id="phone" name="phone" type="tel" spellcheck="false" required="required">
-                    </div>
+                    </div> -->
 
                     <div class="form-item required-item">
                       <label class="field-title">
