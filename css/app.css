@@ -64,13 +64,12 @@ h1, h2, h3, h4 {
   text-align: right;
 }
 .elio-intro-txt{
-  float:right;
-  text-align: right;
-  font-size:14px;
-  font-family: "Open Sans", serif;
-  font-weight: bold;
-  line-height: 24px;
-  color:#62867e;
+  text-align: left;
+  font-size:24px;
+  font-family: 'goudy-old-style', serif;
+  line-height: 32px;
+  color:#b6a690;
+  text-shadow: 2px 2px 2px #000;
 }
 .social-icons{
   color:#fff;
@@ -96,7 +95,7 @@ h1, h2, h3, h4 {
   background-attachment: fixed;
 }
 .elio-form{
-  background-color:#fff;
+  background-color:#c9b89f;
   padding:50px;
   margin: 20px 40px;
 }
@@ -120,6 +119,7 @@ h1, h2, h3, h4 {
   display: block;
   letter-spacing: 0.05rem;
   font-family: 'goudy-old-style', serif;
+  color:#65584a;
 }
 .nes-form-block .form-item .field-element {
   width: 100%;
@@ -131,14 +131,18 @@ h1, h2, h3, h4 {
   -moz-appearance: none;
   border-radius: 0px;
 }
-.nes-form-block .form-item.optional-item label {font-size: 18px; font-weight: 400;}
+.nes-form-block .form-item.optional-item label {
+  font-size: 18px;
+  font-weight: 400;
+  color:#65584a;
+}
 .nes-form-block .form-item .field-element.submit-button {
   font-family: 'futura-pt', sans-serif;
   margin-top: 15px;
   width: 100%;
   padding: 25px;
-  background-color: #aec6b8;
-  color: #fff;
+  background-color: #c9b89f;
+  color: #000;
   border-radius: 0;
   cursor: pointer;
   font-family: futura-pt;
@@ -147,10 +151,36 @@ h1, h2, h3, h4 {
   font-style: normal;
   text-transform: uppercase;
   letter-spacing: .1em;
+  border: 1px solid #000;
 }
 .nes-form-block .form-item.disclaimer-item, .nes-form-block .form-item.disclaimer-item a {
   font-size: 12px;
   color: #555;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #c9b89f;
+    background-clip: padding-box;
+    border-bottom: 1px solid #000;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    border-radius: 0px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control:focus {
+  color: #495057;
+  border-color: #000;
+  background-color:#c9b89f;
+  outline: 0;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)!important;
 }
 .header-pic img{
   width:100%;
@@ -178,15 +208,15 @@ h1, h2, h3, h4 {
   text-shadow: 2px 2px 8px #000000;
 }
 .header {
-  min-height: 970px;
   align-content: center;
+  padding: 75px 0;
   width:100%;
-  background-image: url("https://storage.googleapis.com/wynn-bucket/elio-food-header.jpg");
+  background-image: url("https://storage.googleapis.com/wynn-bucket/elio-shoes.jpg");
   background-size: cover;
 }
 .elio-form-title{
   font-size: 24px;
-  color:#c3af94;
+  color:#65584a;
   text-align: center;
 }
 .elio-form-subtitle{
@@ -196,11 +226,12 @@ h1, h2, h3, h4 {
   padding: 10px 0 30px;
 }
 .elio-logo {
-  width: 168px;
-  height: 62px;
+  width: 330px;
+  height: 120px;
   color: rgba(0,0,0,0);
-  padding: 20px;
+  padding: 0px;
   display: block;
+  margin: 20px 0 100px -10px;
 }
 .elio-logo img{
   width:100%;
@@ -226,7 +257,7 @@ h1, h2, h3, h4 {
 .gallery-sect{
   width:100%;
   background-color:#1e1e1e;
-  padding:20px;
+  padding:20px 35px;
 }
 .meet-the-founders-txt{
   padding:40px 0;
@@ -260,8 +291,41 @@ h1, h2, h3, h4 {
   font-size:36px;
   font-weight: bold;
 }
+.reservations-btn {
+  margin-top: 50px;
+  display: block;
+  width: 185px;
+}
+.reservations-btn a{
+  color:#c9b89f!important;
+  padding: 25px;
+  border-radius: 0;
+  cursor: pointer;
+  font-family: 'goudy-old-style', serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  border: 1px solid #c9b89f;
+  text-shadow: 2px 2px 2px #000;
+}
+.reservations-btn a:hover{
+  color:#c9b89f!important;
+  padding: 25px;
+  border-radius: 0;
+  cursor: pointer;
+  font-family: 'goudy-old-style', serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  border: 1px solid #c9b89f;
+  text-decoration: none;
+}
 .chef-sect{
-  background-image: url('https://storage.googleapis.com/wynn-bucket/chef-background.jpg');
+  /* background-image: url('https://storage.googleapis.com/wynn-bucket/chef-background.jpg'); */
   background-color:#e6dfde;
   background-position: center;
   padding:20px;
@@ -336,7 +400,7 @@ p.details {
 
 /** Footer Styles */
 .footer {
-  background-color: #d76ba8;
+  background-color: #c9b89f;
   text-align: center;
   padding:20px 0;
   font-family: goudy-old-style, serif;
@@ -725,11 +789,18 @@ audio, canvas, video {
   text-decoration: none;
   color:#fff;
 }
+.elio-header-sun {
+  width: 128px;
+  height: 131px;
+  position: absolute;
+  bottom: 50px;
+  right: -180px;
+  margin: 40px 0 0 0;
+}
 
 /** Mobile Styles */
 @media screen and (max-width: 990px) {
   .elio-form {
-    background-color: #fff;
     padding: 30px;
     margin: 30px 0 20px 0;
   }
@@ -759,11 +830,8 @@ audio, canvas, video {
     float: none;
     text-align: center;
     font-size: 14px;
-    font-family: "Open Sans", serif;
-    font-weight: bold;
     line-height: 24px;
     padding: 20px 0;
-    color: #62867e;
   }
   .food-pics{
     margin: 0 0 20px 0;
@@ -785,5 +853,11 @@ audio, canvas, video {
     text-decoration: none;
     color:#fff;
     margin: 20px 0 0 0;
+  }
+  .reservations-btn {
+    margin: 50px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 }

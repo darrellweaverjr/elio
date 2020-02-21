@@ -24,10 +24,10 @@ require dirname(__FILE__).'/_dynamix.php';
     <link rel="shortcut icon" type="image/x-icon" href="https://storage.googleapis.com/wynn-bucket/favicon.ico">
     <link rel="stylesheet" href="https://use.typekit.net/fwf0rjb.css">
     <link rel="stylesheet" href="https://use.typekit.net/epl0coh.css">
-    <link rel="stylesheet" href="css/app.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -56,12 +56,18 @@ require dirname(__FILE__).'/_dynamix.php';
     </div>
 
     <div class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="elio-logo"><img src="https://storage.googleapis.com/wynn-bucket/elio.png" alt="Elio Logo"></div>
+        </div>
+      </div>
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-7">
-            <div class="elio-logo"><img src="https://storage.googleapis.com/wynn-bucket/elio-logo.png" alt="Elio Logo"></div>
-
+          <div class="col-md-5">
             <div class="elio-intro">
+              <div class="elio-icon">
+                <img src="https://storage.googleapis.com/wynn-bucket/elio-icon.png" alt="Elio Icon">
+              </div>
               <div class="elio-intro-txt" data-xid="header-details">
                 <?= $profile->xid("header-details") ?>
               </div>
@@ -72,19 +78,71 @@ require dirname(__FILE__).'/_dynamix.php';
 
               <div class="nes-form-block elio-form" id="nes-form-block">
 
-                <div class="elio-form-title" data-xid="header1"><?= $profile->xid("header1") ?></div>
-                <div class="elio-form-thank-you-subtitle" data-xid="header2"><?= $profile->xid("header2") ?></div>
+                <div class="elio-form-title"><?= $profile->xid("header1") ?></div>
+                <div class="elio-form-subtitle"><?= $profile->xid("header2") ?></div>
+
+                <form autocomplete="on" id="contest_form" action="_submit.php" method="POST">
+                  <input type="hidden" name="profile" value="default" />
+                  <div class="field-list clear">
+
+                    <div class="form-item required-item">
+                      <label class="field-title">
+                        First Name<span>*</span>
+                      </label>
+                      <input class="form-control" name="fname" type="text" spellcheck="false" maxlength="100" required="required">
+                    </div>
+
+                    <div class="form-item required-item">
+                      <label class="field-title">
+                        Last Name<span>*</span>
+                      </label>
+                      <input class="form-control" name="lname" type="text" spellcheck="false" maxlength="100" required="required">
+                    </div>
+
+                    <div class="form-item required-item">
+                      <label class="field-title">
+                        Email<span>*</span>
+                      </label>
+                      <input class="form-control" id="email" name="email" type="email" spellcheck="false" required="required">
+                    </div>
+
+                    <!-- <div class="form-item required-item">
+                      <label class="field-title">
+                        Phone<span>*</span>
+                      </label>
+                      <input class="form-control" id="phone" name="phone" type="tel" spellcheck="false" required="required">
+                    </div> -->
+
+                    <div class="form-item required-item">
+                      <label class="field-title">
+                        Zip Code<span>*</span>
+                      </label>
+                      <input class="form-control" name="zip" type="number" spellcheck="false" required="required">
+                    </div>
+
+                    <div class="form-item required-item optional-item" data-xid="opt_in">
+                      <label>
+                        <input type="checkbox" value="Yes" name="agecheck" required="required">  I am 18 years of age or older.*
+                      </label>
+                    </div>
+
+                    <div class="form-item submit-item" data-xid="submit"><?= $profile->xid("submit") ?></div>
+
+                    <div class="form-item disclaimer-item" data-xid="disclaimer">
+                      <?= $profile->xid("disclaimer") ?>
+                    </div>
+                  </div>
+                </form>
 
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
 
     <div class="gallery-sect" data-xid="food-pics">
-      <!-- <div class="row">
+      <div class="row">
         <div class="col-md-3">
           <div class="food-pics"><img src="https://storage.googleapis.com/wynn-bucket/food-pic-1.jpg" alt="Elio Food 1"></div>
         </div>
@@ -97,7 +155,7 @@ require dirname(__FILE__).'/_dynamix.php';
         <div class="col-md-3">
           <div class="food-pics"><img src="https://storage.googleapis.com/wynn-bucket/food-pic-4.jpg" alt="Elio Food 4"></div>
         </div>
-      </div> -->
+      </div>
     </div>
 
     <div class="chef-sect">
@@ -138,6 +196,7 @@ require dirname(__FILE__).'/_dynamix.php';
         <div class="meet-the-founders-txt">meet the chef</div>
 
         <div class="row" data-xid="Sarah-Thompson">
+
         </div>
 
       </div>
@@ -151,14 +210,7 @@ require dirname(__FILE__).'/_dynamix.php';
 
     <section class="footer" id="footer">
       <div class="footer-content" data-xid="footer-content">
-        <div class="social-icons">
-          <li><a href="https://www.facebook.com/elio.lasvegas/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-          <li><a href="https://instagram.com/elio_lv" target="_blank"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="https://twitter.com/elio_lv" target="_blank"><i class="fab fa-twitter"></i></a></li>
-        </div>
-        <div class="footer-logo"><img src="https://storage.googleapis.com/wynn-bucket/elio-footer-logo.png" alt="Elio"></div>
-        <a href="https://www.wynnlasvegas.com" target="_blank" class="Footer-nav-item">© 2020 Wynn Resorts Holdings, LLC. All rights reserved.</a><br/><br/>
-        <a href="https://www.wynnlasvegas.com/" target="_blank">Wynn Las Vegas</a> | <a href="https://www.wynnlasvegas.com/privacy-policy" target="_blank">Privacy</a>
+        <?= $profile->xid("footer-content") ?>
       </div>
     </section>
 

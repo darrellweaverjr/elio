@@ -17,7 +17,13 @@ require dirname(__FILE__).'/_dynamix.php';
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <?= $profile->xid("head") ?>
+    <link rel="shortcut icon" type="image/x-icon" href="https://storage.googleapis.com/wynn-bucket/favicon.ico">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="628">
+    <meta property="og:description" content="Inspired by Mexico's rich heritage of celebratory food and gatherings, Enrique Olvera, Daniela Soto-Innes and Santiago Perez bring their much anticipated contemporary Mexican restaurant Elio to Encore at Wynn Las Vegas. Opening March 2020.">
+    <meta property="og:title" content="Elio at Wynn Las Vegas!">
+    <meta property="og:url" content="https://www.wynnlasvegas.com/">
+    <meta property="og:image" content="https://storage.googleapis.com/wynn-bucket/elio-og-new.jpg">
 
     <title data-xid="title">Elio at Wynn Las Vegas</title>
 
@@ -56,22 +62,21 @@ require dirname(__FILE__).'/_dynamix.php';
     </div>
 
     <div class="header">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="elio-logo"><img src="https://storage.googleapis.com/wynn-bucket/elio.png" alt="Elio Logo"></div>
-        </div>
-      </div>
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-5">
+          <div class="col-md-7">
+            <div class="elio-logo"><img src="https://storage.googleapis.com/wynn-bucket/elio-logo.png" alt="Elio Logo"></div>
+
             <div class="elio-intro">
-              <div class="elio-icon">
-                <img src="https://storage.googleapis.com/wynn-bucket/elio-icon.png" alt="Elio Icon">
-              </div>
               <div class="elio-intro-txt" data-xid="header-details">
                 <?= $profile->xid("header-details") ?>
               </div>
             </div>
+
+            <div class="reservations-btn">
+              <a href="https://www.sevenrooms.com/reservations/eliowlv?default_date=2020-03-21" target="_blank">Reservations</a>
+            </div>
+
           </div>
           <div class="col-md-5">
             <div class="formblock">
@@ -133,6 +138,7 @@ require dirname(__FILE__).'/_dynamix.php';
                     </div>
                   </div>
                 </form>
+                <!-- <div class="elio-header-sun"><img src="https://storage.googleapis.com/wynn-bucket/elio-header-sun.png"></div> -->
 
               </div>
             </div>
@@ -142,7 +148,7 @@ require dirname(__FILE__).'/_dynamix.php';
     </div>
 
     <div class="gallery-sect" data-xid="food-pics">
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-md-3">
           <div class="food-pics"><img src="https://storage.googleapis.com/wynn-bucket/food-pic-1.jpg" alt="Elio Food 1"></div>
         </div>
@@ -155,7 +161,7 @@ require dirname(__FILE__).'/_dynamix.php';
         <div class="col-md-3">
           <div class="food-pics"><img src="https://storage.googleapis.com/wynn-bucket/food-pic-4.jpg" alt="Elio Food 4"></div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <div class="chef-sect">
@@ -210,7 +216,14 @@ require dirname(__FILE__).'/_dynamix.php';
 
     <section class="footer" id="footer">
       <div class="footer-content" data-xid="footer-content">
-        <?= $profile->xid("footer-content") ?>
+        <div class="social-icons">
+          <li><a href="https://www.facebook.com/elio.lasvegas/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="https://instagram.com/elio_lv" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/elio_lv" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        </div>
+        <div class="footer-logo"><img src="https://storage.googleapis.com/wynn-bucket/elio-footer-logo.png" alt="Elio"></div>
+        <a href="https://www.wynnlasvegas.com" target="_blank" class="Footer-nav-item">© 2020 Wynn Resorts Holdings, LLC. All rights reserved.</a><br/><br/>
+        <a href="https://www.wynnlasvegas.com/" target="_blank">Wynn Las Vegas</a> | <a href="https://www.wynnlasvegas.com/privacy-policy" target="_blank">Privacy</a>
       </div>
     </section>
 
