@@ -180,7 +180,7 @@ h1, h2, h3, h4 {
   border-color: #000;
   background-color:#c9b89f;
   outline: 0;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)!important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0)!important;
 }
 .header-pic img{
   width:100%;
@@ -211,7 +211,7 @@ h1, h2, h3, h4 {
   align-content: center;
   padding: 75px 0;
   width:100%;
-  background-image: url("https://storage.googleapis.com/wynn-bucket/elio-shoes.jpg");
+  background-image: url("https://storage.googleapis.com/wynn-bucket/elio-man-bg.jpg");
   background-size: cover;
 }
 .elio-form-title{

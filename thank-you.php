@@ -84,20 +84,7 @@ require dirname(__FILE__).'/_dynamix.php';
     </div>
 
     <div class="gallery-sect" data-xid="food-pics">
-      <!-- <div class="row">
-        <div class="col-md-3">
-          <div class="food-pics"><img src="https://storage.googleapis.com/wynn-bucket/food-pic-1.jpg" alt="Elio Food 1"></div>
-        </div>
-        <div class="col-md-3">
-          <div class="food-pics"><img src="https://storage.googleapis.com/wynn-bucket/food-pic-2.jpg" alt="Elio Food 2"></div>
-        </div>
-        <div class="col-md-3">
-          <div class="food-pics"><img src="https://storage.googleapis.com/wynn-bucket/food-pic-5.jpg" alt="Elio Food 3"></div>
-        </div>
-        <div class="col-md-3">
-          <div class="food-pics"><img src="https://storage.googleapis.com/wynn-bucket/food-pic-4.jpg" alt="Elio Food 4"></div>
-        </div>
-      </div> -->
+      <?= $profile->xid("food-pics") ?>
     </div>
 
     <div class="chef-sect">
@@ -128,7 +115,7 @@ require dirname(__FILE__).'/_dynamix.php';
 
     </div>
 
-    <!-- <div class="meet-the-chef">
+    <div class="meet-the-chef">
       <div class="container">
 
         <div class="chefs-icon">
@@ -141,7 +128,7 @@ require dirname(__FILE__).'/_dynamix.php';
         </div>
 
       </div>
-    </div> -->
+    </div>
 
     <div class="gallery-sect" data-xid="drinks">
       <div class="row">
