@@ -184,7 +184,7 @@ require dirname(__FILE__).'/_dynamix.php';
         <div class="meet-the-founders-txt">meet the chef</div>
 
         <div class="row" data-xid="Sarah-Thompson">
-
+          <?= $profile->xid("Sarah-Thompson") ?>
         </div>
 
       </div>
