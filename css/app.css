@@ -866,7 +866,7 @@ audio, canvas, video {
     padding: 15px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .gallery-sect {
       width: 100%;
       background-color: #1e1e1e;
