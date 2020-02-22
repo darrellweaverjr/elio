@@ -65,6 +65,8 @@ require dirname(__FILE__).'/_dynamix.php';
               <div class="elio-intro-txt" data-xid="header-details">
                 <?= $profile->xid("header-details") ?>
               </div>
+
+
             </div>
           </div>
           <div class="col-md-5">

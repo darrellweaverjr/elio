@@ -72,6 +72,11 @@ require dirname(__FILE__).'/_dynamix.php';
                 <?= $profile->xid("header-details") ?>
               </div>
             </div>
+
+            <div class="reservations-btn">
+              <a href="https://www.sevenrooms.com/reservations/eliowlv?default_date=2020-03-21" target="_blank">Reservations</a>
+            </div>
+
           </div>
           <div class="col-md-5">
             <div class="formblock">
