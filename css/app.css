@@ -860,4 +860,9 @@ audio, canvas, video {
     width: 100%;
     text-align: center;
   }
+  .gallery-sect {
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 15px;
+  }
 }

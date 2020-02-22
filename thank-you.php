@@ -134,9 +134,7 @@ require dirname(__FILE__).'/_dynamix.php';
     </div>
 
     <div class="gallery-sect" data-xid="drinks">
-      <div class="row">
-        <?= $profile->xid("drinks") ?>
-      </div>
+      <?= $profile->xid("drinks") ?>
     </div>
 
     <section class="footer" id="footer">
