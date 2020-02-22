@@ -863,13 +863,6 @@ audio, canvas, video {
   .gallery-sect {
     width: 100%;
     background-color: #1e1e1e;
-    padding: 15px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .gallery-sect {
-      width: 100%;
-      background-color: #1e1e1e;
-      padding: 15px 15px 0 15px;
+    padding: 15px 15px 0 15px;
   }
 }
