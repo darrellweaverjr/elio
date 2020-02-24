@@ -133,9 +133,9 @@ require dirname(__FILE__).'/_dynamix.php';
       </div>
     </div>
 
-    <div class="gallery-sect" data-xid="drinks">
-      <?= $profile->xid("drinks") ?>
-    </div>
+    <!-- <div class="gallery-sect" data-xid="drinks"> -->
+      <?= /* $profile->xid("drinks") */ ?>
+    <!-- </div> -->
 
     <section class="footer" id="footer">
       <div class="footer-content" data-xid="footer-content">
